@@ -9,7 +9,7 @@ $(document).ready(function(){
             data: {data: inputData}, // gönderilecek veri
             success: function(response){ // istek başarılı olursa çalışacak fonksiyon
                 $('#response').html('<p>' + response.message + '</p>'); // gelen cevabı gösterir
-                console.log(response.message, response.data);
+                console.log("app.js logu" + inputData);
             },
             error: function(err) {
                 $('#response').html('<p>Error: ' + err.statusText + '</p>');

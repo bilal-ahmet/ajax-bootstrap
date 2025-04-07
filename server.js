@@ -5,7 +5,7 @@ const indexRouter = require('./routes/index.js');
 const app = express();
 
 // middleware
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true })); // bu kısım public/js/app.js dizinindeki data.inputData 
 
 // static file tanımlama
 app.use(express.static(path.join(__dirname, 'public')));
